@@ -238,7 +238,7 @@ const preSellCourse=async(req,res)=>{
 }
 
 const vercel=async(req,res)=>{
-    res.send(<h1>hellow world</h1>)
+    res.send("<h1>hellow world</h1>")
 }
 
 
