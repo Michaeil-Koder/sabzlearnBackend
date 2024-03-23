@@ -11,7 +11,13 @@ server.use(express.urlencoded({extended:false}))
 
 
 // middleware
-server.use(cors())
+const corsConfig= {
+    origin:"*",
+    credential:true,
+    methods:["GET","POST","PUT","DELETE"]
+}
+server.options("",cors(corsConfig))
+server.use(cors(corsConfig))
 
 // routes
 const authRoutes=require("./routes/auth")
