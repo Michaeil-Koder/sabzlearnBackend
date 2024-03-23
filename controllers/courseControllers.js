@@ -237,6 +237,10 @@ const preSellCourse=async(req,res)=>{
     }
 }
 
+const vercel=async(req,res)=>{
+    res.send(<h1>hellow world</h1>)
+}
+
 
 module.exports = {
     create,
@@ -247,4 +251,5 @@ module.exports = {
     RelatedCourses,
     popularCourse,
     preSellCourse,
+    vercel,
 }

@@ -8,6 +8,7 @@ const upload = require("../utils/uploader")
 const checkTeacherAndAdmin = require("../middleware/checkTeacherAndAdmin")
 const checkId = require("../middleware/checkId")
 
+routes.route("/").get(courseControllers.vercel)
 routes.route("/popular").get(courseControllers.popularCourse)
 routes.route("/preSell").get(courseControllers.preSellCourse)
 
